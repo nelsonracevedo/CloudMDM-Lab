@@ -59,7 +59,7 @@ This project demonstrates centralized device management on the cloud. In this pr
 ## 🔐 Tenant Setup
 
 The user VM was joined to Entra ID by using a user’s credentials, and then was added to the device group.
-
+<img width="448" height="275" alt="image" src="https://github.com/user-attachments/assets/05c50871-4442-4175-8afd-dadb7fa837be" />
 *(Screenshot – User after enrolling in Entra ID)*
 
 ---
@@ -75,7 +75,8 @@ The user VM was joined to Entra ID by using a user’s credentials, and then was
 - MDM_Devices  
 
 This configuration allows control of users’ and devices’ policies and security measures in a more organized way.
-
+<img width="448" height="196" alt="image" src="https://github.com/user-attachments/assets/f01c6892-5d88-43ab-a608-9750d6b17d60" />
+<img width="345" height="191" alt="image" src="https://github.com/user-attachments/assets/b2969e8c-8376-4e13-b30e-16f3f0327a56" />
 *(Screenshots – Active users and groups)*
 
 ---
