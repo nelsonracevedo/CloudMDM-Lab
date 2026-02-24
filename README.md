@@ -1,17 +1,17 @@
-# MDM Using Microsoft Intune and Entra ID Lab
+# ☁️ MDM Using Microsoft Intune and Entra ID Lab
 
 **Nelson R. Acevedo**  
 Cybersecurity Student  
 
 ---
 
-## Introduction
+## 📖 Introduction
 
 This project demonstrates centralized device management on the cloud. In this project, I applied Mobile Device Management (MDM) by using Microsoft Intune and Microsoft Entra ID.
 
 ---
 
-## Project Goals
+## 🎯 Project Goals
 
 - Manage Windows devices by using Microsoft Intune  
 - Enroll devices on Microsoft Entra ID  
@@ -25,7 +25,7 @@ This project demonstrates centralized device management on the cloud. In this pr
 
 ---
 
-## Tools
+## 🛠 Tools
 
 - Microsoft Intune (MDM)  
 - Microsoft Entra ID (Cloud identity)  
@@ -34,16 +34,16 @@ This project demonstrates centralized device management on the cloud. In this pr
 
 ---
 
-## Environment Design
+## 🏗 Environment Design
 
 **Organization Name:** NelCorp  
 
-### Virtual Machines
+### 💻 Virtual Machines
 - User – Windows 11 (Entra ID Joined)
 
 ---
 
-## Implementation Steps
+## ⚙️ Implementation Steps
 
 1. Tenant setup  
 2. User and group creation  
@@ -56,7 +56,7 @@ This project demonstrates centralized device management on the cloud. In this pr
 
 ---
 
-## Tenant Setup
+## 🔐 Tenant Setup
 
 The user VM was joined to Entra ID by using a user’s credentials, and then was added to the device group.
 
@@ -64,13 +64,13 @@ The user VM was joined to Entra ID by using a user’s credentials, and then was
 
 ---
 
-## Users and Groups
+## 👥 Users and Groups
 
-### Users
+### 👤 Users
 - Jose Perez → Normal user  
 - ItAdmin → User with administrator privileges  
 
-### Groups
+### 📂 Groups
 - MDM_Users  
 - MDM_Devices  
 
@@ -80,7 +80,7 @@ This configuration allows control of users’ and devices’ policies and securi
 
 ---
 
-## Compliance Policy Configuration
+## 🛡 Compliance Policy Configuration
 
 - Require BitLocker  
 - Require Code Integrity  
@@ -91,7 +91,7 @@ If a device doesn’t meet these requirements, it is marked as non-compliant and
 
 ---
 
-## Security Controls Implemented
+## 🔒 Security Controls Implemented
 
 - BitLocker enforcement  
 - Password complexity requirements  
@@ -102,11 +102,11 @@ A configuration profile enforcement policy was created to make sure all this was
 
 ---
 
-## Conditional Access Policy
+## 🔑 Conditional Access Policy
 
 I created a Conditional Access Policy in Entra ID to ensure that only compliant devices with multi-factor authentication could connect to Entra ID. This allows prevention of unauthorized users and users that don’t have proper security configurations from accessing apps and other resources.
 
-### Policy Configuration
+### 📝 Policy Configuration
 
 - **Name:** Require Compliant Device for MDM User  
 - **Grant access:** Compliant device and multi-factor authentication required  
@@ -114,7 +114,7 @@ I created a Conditional Access Policy in Entra ID to ensure that only compliant 
 
 ---
 
-## Security Impact
+## 📊 Security Impact
 
 - Prevents unauthorized device access  
 - Blocks non-compliant devices from accessing cloud apps  
@@ -123,9 +123,9 @@ I created a Conditional Access Policy in Entra ID to ensure that only compliant 
 
 ---
 
-## App Deployment
+## 📦 App Deployment
 
-### Application Type
+### 📱 Application Type
 
 - Platform: Windows 10/11  
 - App type: Microsoft Store app (new)  
@@ -138,17 +138,17 @@ Initially, the installation behavior was set to User, while the app was assigned
 
 ---
 
-## Testing and Validation
+## 🧪 Testing and Validation
 
-### Device Compliance Verification
+### ✅ Device Compliance Verification
 
 I temporarily disabled BitLocker to simulate non-compliance. After activating it again, the device became compliant again. This was verified within Microsoft Intune under **Devices → Compliance**.
 
-### Application Deployment Test
+### ✅ Application Deployment Test
 
 The Microsoft app was successfully installed on the client device, and this was confirmed in Intune by checking the app status.
 
-### Conditional Access Enforcement Test
+### ✅ Conditional Access Enforcement Test
 
 The policy required a compliant device and multi-factor authentication. When attempting access, authentication requirements were enforced according to the policy configuration. This confirmed that access control was dependent on compliance status and identity verification.
 
@@ -156,13 +156,13 @@ The policy required a compliant device and multi-factor authentication. When att
 
 ---
 
-## Challenges Encountered
+## 🚧 Challenges Encountered
 
-### Device Enrollment Error
+### 🔄 Device Enrollment Error
 
 The device was Azure AD Registered but not Azure AD Joined (MDM Enrolled). When it was only registered, the device allowed most policies to apply, but app deployment did not function correctly. I had to disconnect the device and connect it again to be enrolled instead of registered.
 
-### App Deployment Misconfiguration
+### ⚠️ App Deployment Misconfiguration
 
 The application installation initially failed because the installation behavior was configured for users while the app assignment targeted a device group. This mismatch caused the deployment to remain in a pending state. After reviewing the assignment configuration and aligning it with a device-based deployment model, the issue was resolved.
 
@@ -170,16 +170,16 @@ These challenges made me realize the importance of proper security group assignm
 
 ---
 
-## Lessons Learned
+## 📚 Lessons Learned
 
-### Compliance vs Configuration Policies
+### 🔍 Compliance vs Configuration Policies
 
 Compliance policies only check if the device is compliant, while configuration policies automatically apply or require certain configurations when logging into the device.
 
-### Cloud-Based Endpoint Security
+### ☁️ Cloud-Based Endpoint Security
 
 Microsoft Intune and Entra ID provide centralized visibility and control over endpoint security posture, enabling secure remote device management.
 
-### Conditional Access Dependency
+### 🔐 Conditional Access Dependency
 
 Conditional Access policies depend on compliance policies and device configuration. A proper compliance configuration determines which users and devices have access to cloud services.
