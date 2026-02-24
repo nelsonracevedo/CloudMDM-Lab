@@ -60,6 +60,7 @@ This project demonstrates centralized device management on the cloud. In this pr
 
 The user VM was joined to Entra ID by using a user’s credentials, and then was added to the device group.
 <img width="448" height="275" alt="image" src="https://github.com/user-attachments/assets/05c50871-4442-4175-8afd-dadb7fa837be" />
+
 *(Screenshot – User after enrolling in Entra ID)*
 
 ---
@@ -77,6 +78,7 @@ The user VM was joined to Entra ID by using a user’s credentials, and then was
 This configuration allows control of users’ and devices’ policies and security measures in a more organized way.
 <img width="448" height="196" alt="image" src="https://github.com/user-attachments/assets/f01c6892-5d88-43ab-a608-9750d6b17d60" />
 <img width="345" height="191" alt="image" src="https://github.com/user-attachments/assets/b2969e8c-8376-4e13-b30e-16f3f0327a56" />
+
 *(Screenshots – Active users and groups)*
 
 ---
@@ -134,6 +136,8 @@ I created a Conditional Access Policy in Entra ID to ensure that only compliant 
 - Target group: Device group  
 
 Initially, the installation behavior was set to User, while the app was assigned to a device group which caused an error. However, after troubleshooting, the app was able to work and was automatically installed in the client device.
+<img width="341" height="261" alt="image" src="https://github.com/user-attachments/assets/4f91074e-9abb-4c1b-a8e4-6b832bdcbdc1" />
+<img width="437" height="267" alt="image" src="https://github.com/user-attachments/assets/1388d628-6d5d-4c95-acd9-1783e7c69770" />
 
 *(Screenshots – App status in Intune and app installed in client device)*
 
@@ -152,6 +156,8 @@ The Microsoft app was successfully installed on the client device, and this was 
 ### ✅ Conditional Access Enforcement Test
 
 The policy required a compliant device and multi-factor authentication. When attempting access, authentication requirements were enforced according to the policy configuration. This confirmed that access control was dependent on compliance status and identity verification.
+
+<img width="621" height="251" alt="image" src="https://github.com/user-attachments/assets/0642963f-e144-4b63-9022-9c9e5e534c95" />
 
 *(Screenshot – Showing the device is compliant in Microsoft Intune)*
 
