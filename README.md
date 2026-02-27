@@ -44,7 +44,7 @@ This project demostrates skills important for helpdesk, such as:
 
 ## 📄 Full Lab Report
 For detailed setup, screenshots, and step-by-step instructions, download the full lab report:  
-(Documentation/Cloud%20MDM%20Lab.pdf)
+[Cloud Mobile Device Management(MDM) Full Report](Documentation/Cloud%20MDM%20Lab.pdf)
 
 ---
 
