@@ -11,12 +11,12 @@ This project demonstrates centralized device management on the cloud. In this pr
 ---
 
 ## Key Skills Demonstrated
-- Troubleshot app deployment issues.
+- Troubleshot app deployment issues
 - Tested non-compliant devices and troubleshot them to make them compliant
-- Seted up a MDM tenant in Microsoft Intune
+- Set up an MDM tenant in Microsoft Intune
 - Created users and security groups using Microsoft Admin Center
-- Enrrolled a device in Entra ID
-- Configured profile enforcement and Compilance polocies
+- Enrolled a device in Entra ID
+- Configured profile enforcement and Compliance policies
 - Managed conditional access
 
 ---
@@ -25,7 +25,7 @@ This project demonstrates centralized device management on the cloud. In this pr
 - Microsoft Intune 
 - Microsoft Entra ID
 - VMWare 
-- Windoows 11 client
+- Windows 11 client
 - Mobile Device Management (MDM)
 - App deployment
 - Cloud Identity
@@ -33,12 +33,13 @@ This project demonstrates centralized device management on the cloud. In this pr
 ---
 
 ## Relevance to Help Desk
-This project demostrates skills important for helpdesk, such as:
-- Creating and managing domain user accounts
-- Troubleshooting domain join and DNS issues
-- Configuring and validating Group Policy settings
-- Managing file access permissions using security groups
-- Monitoring login activity and investigating user issues
+This project demonstrates skills important for a helpdesk, such as:
+- Creating and managing  user and groups accounts
+- On-prem domain management
+- Cloud device management
+- Troubleshooting app deployment issues
+- Configuring and validating compliance and profile enforcement Policies settings
+- Managing conditional access
  
 ---
 
