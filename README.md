@@ -51,6 +51,6 @@ For detailed setup, screenshots, and step-by-step instructions, download the ful
 
 ## Screenshots
 *OU Structure*  
-![OU Structure](Screenshots/OU%20Structure.png)  
+![Active Users](Screenshots/Active%20Groups.png)  
 *Group Policies*  
-![Group Policy](Screenshots/Group-Policy.png)
+![Device Complilance Check](Screenshots/device%20complilance%20check%20on%20intune.png)
